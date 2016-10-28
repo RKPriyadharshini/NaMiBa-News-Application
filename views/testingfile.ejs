@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Perseverance</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.data{
+
+    border-style: solid;
+    border-color:#D3D3D3;
+    border-radius: 3px;
+    border-width:1px;
+    margin-bottom: 15px;
+    width:300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+#he:hover{
+  color:green;
+}
+header{
+  margin:20px;
+}
+header h1,
+header p{
+  display: inline;
+}
+img
+{
+  display: block;
+  
+}
+</style>
+<script src="assist.js"></script>
+</head>
+<body>
+<header>
+<h1 style="font-family: comic sans MS;margin-left: 20px" id="he">NaMiBa.com</h1>
+<p style=" font-family: comic sans MS;margin-top:5px;float:right;font-size: 30px;margin-right: 20px; ">Simple and Elegant</p>
+</header>
+<nav class="navbar navbar-default" id="mainnav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Namiba</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">International</a></li>
+      <li><a href="#">National</a></li> 
+      <li><a href="#">Regional</a></li> 
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+     <li><span>
+     <input type="text" class="form-control" id="searchquery" style="margin-top: 8px">
+     </span></li>
+     <li> <button type="button" class="btn btn-info" style="float:right;margin:8px;margin-left: 0px;margin-right: 40px">
+      <span class="glyphicon glyphicon-search" ></span>
+    </button></li>
+    </ul>
+  </div>
+</nav>
+<div class="row" id="remdata">
+<div class="col-md-3">
+<div style="margin-left: 35px">
+  <h3 style="margin-top: 0px;padding-top: 3px ">Top News</h3><hr>
+  <ul>
+  <% for(i=0;i<100;i++) { %>
+  <li>All that is needed is time</li><br>
+  <% } %>
+  </ul>
+</div>
+</div>
+<div class="col-md-3" id="datapane1">
+</div>
+<div class="col-md-3" id="datapane2">
+</div>
+<div class="col-md-3" id="datapane3">
+</div>
+</div>
+</body>
+</html>

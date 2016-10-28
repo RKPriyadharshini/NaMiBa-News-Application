@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NaMiBa</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ .affix {
+      top: 0;
+      width: 100%;
+  }
+  body {
+   padding-top: 52px; 
+ }
+ html,body {
+  height:100%;
+ }
+.fake {
+  height:150px;
+  background-color: lavender;
+}
+.navbar {
+  background-color: white;
+  
+}
+.navbar-header{
+  padding-left: 100px;
+}
+#userpic {
+  padding-left: 200px;
+}
+  </style>
+  <script src="main.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-header">
+      <a class="navbar-brand" href="#">NaMiBa</a>
+    </div>
+</nav>
+<div class="row">
+<div class="col-sm-1"  style="background-color:white;" id="leftpaneex"></div>
+<div class="col-sm-2"  style="background-color:white;" id="leftpane">
+<ul>
+  <% for(i=0;i<100;i++) { %>
+  <li>Hello bootstrap bill Turner </li>
+  <% } %>
+  </ul>
+</div>
+<div class="col-sm-5"  style="background-color:white;" id="middlepane">
+  <% for(i=0;i<50;i++) { %>
+  <div class= "fake"> 
+  <h3><b>Why is the world so boring?</b></h3>
+  </div>
+  <hr>
+  <% } %>
+</div>
+<div class="col-sm-1"  style="background-color:white;" id="middleright"></div>
+<div class="col-sm-3"  style="background-color:white;"  id="rightpane">
+</div>
+</div>
+</body>
+</html>

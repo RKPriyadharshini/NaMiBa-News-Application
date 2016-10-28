@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NaMiBa</title>
+</head>
+<body>
+<% for(i=0;i<50;i++) { %>
+  <form action="/register" method="POST">
+    Username: <input id=username type="text" placeholder="name" name="name" required>
+    Password: <input id=pass type="Password" placeholder="password" name="password" required>
+    Motto: <input id=motto type="text" placeholder="motto" name="motto" required>
+    <button type="submit">Register</button>
+  </form>
+  <% } %>
+</body>
+</html>
